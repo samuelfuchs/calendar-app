@@ -16,4 +16,6 @@ mongoose.connect(
   () => console.log("Connected to MongoDB")
 );
 
+app.use("/api/calendar", require("./Controllers/CalendarController"));
+
 app.listen(5000, () => console.log("Server started"));

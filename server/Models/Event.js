@@ -6,5 +6,5 @@ const EventSchema = mongoose.Schema({
   title: String,
 });
 
-const Event = mongose.model("Event", EventSchema);
+const Event = mongoose.model("Event", EventSchema);
 module.exports = Event;
