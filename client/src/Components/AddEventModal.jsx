@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
 import Datetime from "react-datetime";
 
@@ -24,7 +24,7 @@ export default function ({ isOpen, onClose, onEventAdded }) {
         <input
           placeholder="Title"
           value={title}
-          onChange={(e) => SVGTextPositioningElement(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}
         />
 
         <div>
