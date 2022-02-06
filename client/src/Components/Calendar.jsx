@@ -5,6 +5,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 export default function () {
   return (
     <section>
+      <button>Add Event</button>
       <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" />
     </section>
   );
